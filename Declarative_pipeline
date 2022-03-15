@@ -1,0 +1,15 @@
+pipeline {
+    
+    agent {
+        label 'java-docker-slave'
+            }
+
+     stages {
+         stage ("build") {
+
+             steps {
+                   echo 'building the application...'
+             }
+         }
+     }
+}
